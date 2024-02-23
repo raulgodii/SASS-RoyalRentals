@@ -1,0 +1,30 @@
+/// Componente: Números de resultados
+.results{
+    padding-left: 2rem;
+    padding-top: 6rem;
+    @include response(xl){
+        padding-top: 6rem;
+        padding-left: 5rem;
+    }
+    
+
+    @include flex($justify: flex-start, $gap: 2rem);
+    &-title{
+        color: getColor(primary);
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        font-weight: getFontWeight(bold);
+        font-family: $font-family-title;
+    }
+
+    &-number{
+        color: getColor(white-text);
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        font-weight: getFontWeight(bold);
+    }
+}

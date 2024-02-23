@@ -1,0 +1,51 @@
+/// Componente: Logo
+.logo{
+    grid-column:  1 / 5;
+    grid-row: 1 / 2;
+
+    @include response(xl){
+
+        grid-row: 1 / 2;
+    }
+
+    padding: 1rem;
+    @include flex($direction: row, $justify: center, $align: center, $gap: 5rem);
+
+    &-img{
+        @include response(xl){
+            width: 10rem;
+        }
+
+        width: 7rem;
+        transition: $transition;
+        
+        &:hover{
+            cursor: pointer;
+            scale: 1.1;
+            transition: $transition;
+        }
+    }
+
+    &-text{
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+
+        @include response(md){
+            display: block;
+        }
+        font-size: getFontSize(xl);
+        font-family: $font-family-logo;
+        text-transform: uppercase;
+        color: getColor(primary);
+        font-weight: getFontWeight(bold);
+        transition: $transition;
+        display: none;
+
+        &:hover{
+            cursor: pointer;
+            scale: 1.1;
+            transition: $transition;
+        }
+    }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4328465e5b.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+    <link rel="icon" href="images/favicon.ico" />
+    <title>RoyalRentals | Results</title>
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img class="logo-img" src="images/logo.png" alt="Luxury Life">
+          </a>
+          <a href="index.html">
+            <h1 class="logo-text">RoyalRentals</h1>
+          </a>
+        </div>
+        <nav class="header-nav">
+            <div class="header-nav-hamburger">
+              <div class="header-nav-hamburger-lines">
+                  <span class="header-nav-hamburger-lines-line header-nav-hamburger-lines-line-1"></span>
+                  <span class="header-nav-hamburger-lines-line header-nav-hamburger-lines-line-2"></span>
+                  <span class="header-nav-hamburger-lines-line header-nav-hamburger-lines-line-3"></span>
+              </div> 
+          </div>
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a class="header-nav-link" href="index.html">Home</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="about.html">About</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="results.html">Houses</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="contact.html">Contact</a></li>
+                <a href="contact.html" class="header-nav-button">Get Started</a>
+            </ul>
+        </nav>
+        <nav class="search-nav">
+          <div class="search-nav-item">
+            <h5 class="search-nav-item-text">Arrival</h5>
+            <div class="search-nav-item-input-group">
+              <input class="search-nav-item-input" type="date" name="arrival" id="arrival">
+              <i class="fa-regular fa-calendar-days search-nav-item-input-group-icon"></i>
+            </div>
+          </div>
+          <div class="search-nav-item">
+            <h5 class="search-nav-item-text">Departure</h5>
+            <div class="search-nav-item-input-group">
+              <input class="search-nav-item-input" type="date" name="departure" id="departure">
+              <i class="fa-regular fa-calendar-days search-nav-item-input-group-icon"></i>
+            </div>
+          </div>
+          <div class="search-nav-item">
+            <h5 class="search-nav-item-text">Rooms</h5>
+            <div class="search-nav-item-input-group">
+              <select class="search-nav-item-input">
+                <option value="1">Individual</option>
+                <option value="2">Double</option>
+                <option value="3">Triple</option>
+                <option value="4">Quadruple</option>
+                <option value="5">Quintuple</option>
+              </select>
+              <i class="fa-regular fa-solid fa-bed search-nav-item-input-group-icon"></i>
+            </div>
+          </div>
+          <div>
+            <a class="search-nav-search-button" href="results.html">Search</a>
+          </div>
+        </nav>
+    </header>
+
+        <main class="content">
+            <section class="results">
+                <h2 class="results-title">Results: </h2>
+                <h2 class="results-number">7</h2>
+            </section>
+
+            <section class="results-list">
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/banner.jpg" alt="Luxury villa in Mallorca">
+                        <div class="results-list-list-item-info">
+                            <i data-star="4.5"></i>
+                            <h3 class="results-list-list-item-info-title">Luxury villa in Mallorca</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">10</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">5</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-parking results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-swimming-pool results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-gym results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-restaurant results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/carousel/carousel-4.jpg" alt="Private villa in Napoles">
+                        <div class="results-list-list-item-info">
+                            <i data-star="4.9"></i>
+                            <h3 class="results-list-list-item-info-title">Private villa in Napoles</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">7</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">5</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-parking results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-swimming-pool results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-gym results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-restaurant results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/carousel/carousel-2.jpg" alt="Mansion in Viena">
+                        <div class="results-list-list-item-info">
+                            <i data-star="3.5"></i>
+                            <h3 class="results-list-list-item-info-title">Mansion in Viena</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">30</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">10</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-parking results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-swimming-pool results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-gym results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-restaurant results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/gojar.jpg" alt="Renting house in Granada">
+                        <div class="results-list-list-item-info">
+                            <i data-star="5.0"></i>
+                            <h3 class="results-list-list-item-info-title">Renting house in Granada</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">5</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">3</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-parking results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-swimming-pool results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/carousel/carousel-3.jpg" alt="Villa in Milano">
+                        <div class="results-list-list-item-info">
+                            <i data-star="3.6"></i>
+                            <h3 class="results-list-list-item-info-title">Villa in Milano</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">12</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">6</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-parking results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/banner.jpg" alt="Renting house in Marbella">
+                        <div class="results-list-list-item-info">
+                            <i data-star="3.0"></i>
+                            <h3 class="results-list-list-item-info-title">Renting house in Marbella</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">7</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">5</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-swimming-pool results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="results-list-list">
+                    <div class="results-list-list-item">
+                        <img class="results-list-list-item-img" src="./images/gojar.jpg" alt="Hotel 1">
+                        <div class="results-list-list-item-info">
+                            <i data-star="4.5"></i>
+                            <h3 class="results-list-list-item-info-title">Chalet in Gojar</h3>
+                            <div class="results-list-list-item-info-capacity">
+                                <i class="fa-solid fa-user results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">6</h4>
+                                <i class="fa-solid fa-bed results-list-list-item-info-capacity-icon"></i>
+                                <h4 class="results-list-list-item-info-capacity-text">3</h4>
+                            </div>
+                            <p class="results-list-list-item-info-description">This exceptional residence is located in a highly sought-after 
+                                area and boasts a host of premium features that are sure to impress even the most discerning guests. The interior 
+                                is thoughtfully designed and meticulously decorated with high-end furnishings, state-of-the-art appliances, 
+                                and top-of-the-line fixtures and finishes. With spacious living areas, multiple bedrooms, and pristine bathrooms, 
+                                this house is perfect for families, groups of friends, or couples seeking a lavish retreat.
+                            </p>
+                            <div class="results-list-list-item-info-services">
+                                <i class="fa-solid fa-wifi results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-parking results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-swimming-pool results-list-list-item-info-services-icon"></i>
+                                <i class="fa-solid fa-spa results-list-list-item-info-services-icon"></i>
+                            </div>
+                            <a class="results-list-list-item-info-detail" href="detail.html">Details</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-column">
+            <h2 class="footer-title">Help</h2>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="contact.html">Contact</a></li>
+              <li><a class="footer-link" href="#">Shipment</a></li>
+              <li><a class="footer-link" href="#">Devolutions</a></li>
+              <li><a class="footer-link" href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">About Us</h2>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="about.html">Who we are</a></li>
+              <li><a class="footer-link" href="about.html">Work with us</a></li>
+              <li><a class="footer-link" href="about.html">Privacity policy</a></li>
+              <li><a class="footer-link" href="about.html">Terms and conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">Legal</h2>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="policy.html">Cookies policy</a></li>
+              <li><a class="footer-link" href="policy.html">Privacity policy</a></li>
+              <li><a class="footer-link" href="policy.html">Terms and conditions</a></li>
+              <li><a class="footer-link" href="policy.html">Legal Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">Payment Methods</h2>
+            <ul class="footer-row footer-list">
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-visa"></i></a>
+              </li>
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-mastercard"></i></a>
+              </li>
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-paypal"></i></a>
+              </li>
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-amazon-pay"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">Follow Us</h2>
+            <ul class="footer-row footer-list">
+              <li>
+                <a href="https://www.instagram.com/RoyalRental/" target="_blank"><i class="fab fa-instagram footer-icon"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/RoyalRental" target="_blank"><i class="fab fa-facebook-f footer-icon"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/RoyalRental" target="_blank"><i class="fab fa-twitter footer-icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>

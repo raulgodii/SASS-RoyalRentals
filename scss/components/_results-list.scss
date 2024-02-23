@@ -1,0 +1,96 @@
+/// Componente: Lista de resultados
+.results-list{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    &-list{
+        @include flex($direction: column, $justify: center, $align: center, $gap: 10rem);
+
+        &-item{
+
+            @include response(xl){
+                display: grid;
+                grid-template-columns: 0.7fr 1fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 10rem;
+                padding-left: 5rem;
+            }
+            
+            @include flex($direction: column, $justify: center, $align: center, $gap: 5rem);
+
+            &-img{
+                @include response(xl){
+                    padding-right: 5rem;
+                }
+                grid-area: 1 / 1 / 2 / 2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            &-info{
+                grid-area: 1 / 2 / 2 / 3;
+                @include flex($direction: column, $justify: space-between, $align: flex-start, $gap: 3rem);
+                padding: 1rem;
+
+                &-title{
+                    color: getColor(primary);
+                    @include response(xl){
+                        font-size: getFontSize(xxl);
+                    }
+                    font-size: getFontSize(xl);
+                    font-family: $font-family-title;
+                }
+
+                &-capacity{
+                    @include flex($gap: 3rem);
+
+                    &-icon{
+                        @include response(xl){
+                            font-size: getFontSize(xxl);
+                        }
+                        font-size: getFontSize(xl);
+                        color: getColor(primary);
+                    }
+
+                    &-text{
+                        color: getColor(white-text);
+                        @include response(xl){
+                            font-size: getFontSize(xxl);
+                        }
+                        font-size: getFontSize(xl);
+                    }
+                }
+                
+                &-description{
+                    color: getColor(white-text);
+                    @include response(xl){
+                        font-size: getFontSize(lg);
+                    }
+                    font-size: getFontSize(md);
+                }
+
+                &-services{
+                    @include flex($gap: 5rem);
+
+                    &-icon{
+                        @include response(xl){
+                            font-size: getFontSize(xxl);
+                        }
+                        font-size: getFontSize(xl);
+                        color: getColor(primary);
+                    }
+                }
+
+                &-detail{
+                    @include response(xl){
+                        @include button();
+                    }
+                    @include button(md);
+                }
+            }
+        }
+    }
+
+    @include stars(xxl);
+}

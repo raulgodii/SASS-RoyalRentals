@@ -1,0 +1,33 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'base.scss';
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss";
+
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/content';
+@import './layout/footer';
+
+@import './components/logo';
+@import './components/hamburger';
+@import './components/banner';
+@import './components/publicity';
+@import './components/footer_elements';
+@import "../node_modules/bootstrap/scss/_carousel.scss";
+@import './components/carousel';
+@import './components/opinions';
+@import './components/card';
+@import './components/news';
+@import './components/news_details';
+
+
+@import './components/results';
+@import './components/results-list';
+
+@import './components/details';
+
+@import './components/information';
+
+@import './components/contact';

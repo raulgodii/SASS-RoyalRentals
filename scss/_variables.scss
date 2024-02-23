@@ -1,0 +1,104 @@
+/// @author Raúl González
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+// Paleta de colores
+/// Mapa de colores
+/// @group Colores
+$colors: (
+    primary: #407a82,
+    secondary: #d0e7f4,
+    tertiary: #040635,
+    quaternary: #787bea,
+    white-text: #FFFFFF,
+);
+
+///
+$transition: 0.2s;
+
+/// @group Colores
+/// @param {string} $color - Nombre del color del mapa de colores
+/// @return {color} - Color en Hexadecimal
+
+@function getColor($color) {
+    @return map-get($colors, $color);
+};
+
+// Tamaños de fuente
+
+/// Mapa de tamaños de fuente
+/// @group Tamaños
+$font-sizes:(
+    icons-size: 10rem,
+    xxxl: 6rem,
+    xxl: 4rem,
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+/// @group Tamaños
+/// @param {string} $size - Nombre del tamaño de fuente del mapa de tamaños
+/// @return {size} - Tamaño de fuente en rem
+@function getFontSize($size) {
+    @return map-get($font-sizes, $size);
+};
+
+
+/// Mapa de pesos de fuente
+/// @group Pesos
+$font-weight: (
+    thin: 100,
+    extraLight: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semi-bold: 600,
+    bold: 700,
+    extraBold: 800
+);
+
+/// @group Pesos
+/// @param {string} $weight - Nombre del peso de fuente del mapa de pesos
+/// @return {weight} - Peso de fuente
+
+@function getFontWeight($weight) {
+    @return map-get($font-weight, $weight);
+};
+
+// Fuente
+
+/// 
+$font-family-title: 'Montserrat', sans-serif;
+///
+$font-family-text: 'Poppins', sans-serif;
+///
+$font-family-logo: 'Cormorant', serif;
+
+///
+$max-width: 1200px;
+
+
+// Cambio de variables de carousel de Bootstrap
+
+///
+$carousel-control-color: getColor(primary);
+///
+$carousel-control-icon-width: 7rem;
+///
+$carousel-control-opacity: 0.5;
+///
+$carousel-control-hover-opacity: 1;
+///
+$carousel-transition-duration: .8s;
+
+///
+$carousel-indicator-active-bg: getColor(primary);
+///
+$carousel-indicator-width: 3rem;
+///
+$carousel-indicator-height: 1rem;
+///
+$carousel-indicator-spacer: 2rem;

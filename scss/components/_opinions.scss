@@ -1,0 +1,58 @@
+/// Componente: Opiniones
+.opinions {
+  @include sectionPaddings();
+
+  &-header {
+    @include section_header();
+  }
+
+  &-text {
+    @include flex(column, center, center, 3rem);
+
+    &-title {
+      @include response(xl) {
+        font-size: getFontSize(xxxl);
+      }
+
+      font-size: getFontSize(xl);
+      font-weight: getFontWeight(bold);
+      text-transform: uppercase;
+      color: getColor(primary);
+      text-align: center;
+      font-family: $font-family-title;
+    }
+
+    &-description {
+      @include response(xl) {
+        font-size: getFontSize(xl);
+        text-align: justify;
+      }
+
+      font-size: getFontSize(sm);
+      font-weight: getFontWeight(normal);
+      text-transform: none;
+      color: getColor(tertiary);
+      text-align: left;
+    }
+  }
+}
+
+
+#opinionsCarousel {
+  background-color: getColor(secondary);
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem;
+}
+
+@include stars(xl);
+
+@include response(xl) {
+  #opinionsCarousel {
+    background-color: getColor(secondary);
+    width: 90%;
+    margin: 0 auto;
+    padding: 10rem;
+  }
+  @include stars(xxl);
+}

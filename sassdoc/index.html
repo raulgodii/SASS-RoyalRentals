@@ -1,0 +1,1194 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Proyectosass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Proyectosass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/raulgodii/SASS-RoyalRentals#readme">Proyectosass - v1.0.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="colors" data-type="variable"><a href="#colores-variable-colors">colors</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-function"><a href="#colores-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="getColor" data-type="function"><a href="#colores-function-getColor">getColor</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="pesos"><a href="#pesos">pesos</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="pesos-variable"><a href="#pesos-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="pesos" data-name="font-weight" data-type="variable"><a href="#pesos-variable-font-weight">font-weight</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="pesos-function"><a href="#pesos-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="pesos" data-name="getFontWeight" data-type="function"><a href="#pesos-function-getFontWeight">getFontWeight</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="tamaños"><a href="#tamaños">tamaños</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="tamaños-variable"><a href="#tamaños-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="tamaños" data-name="font-sizes" data-type="variable"><a href="#tamaños-variable-font-sizes">font-sizes</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="tamaños-function"><a href="#tamaños-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="tamaños" data-name="getFontSize" data-type="function"><a href="#tamaños-function-getFontSize">getFontSize</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="*" data-type="css"><a href="#undefined-css-*">*</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="html" data-type="css"><a href="#undefined-css-html">html</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container" data-type="css"><a href="#undefined-css-.container">.container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="a" data-type="css"><a href="#undefined-css-a">a</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".banner" data-type="css"><a href="#undefined-css-.banner">.banner</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card" data-type="css"><a href="#undefined-css-.card">.card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".gallery" data-type="css"><a href="#undefined-css-.gallery">.gallery</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".contact" data-type="css"><a href="#undefined-css-.contact">.contact</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".details" data-type="css"><a href="#undefined-css-.details">.details</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".footer-column" data-type="css"><a href="#undefined-css-.footer-column">.footer-column</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".fixed-position" data-type="css"><a href="#undefined-css-.fixed-position">.fixed-position</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".information" data-type="css"><a href="#undefined-css-.information">.information</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".logo" data-type="css"><a href="#undefined-css-.logo">.logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".news" data-type="css"><a href="#undefined-css-.news">.news</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opinions" data-type="css"><a href="#undefined-css-.opinions">.opinions</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".publicity" data-type="css"><a href="#undefined-css-.publicity">.publicity</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".results-list" data-type="css"><a href="#undefined-css-.results-list">.results-list</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".results" data-type="css"><a href="#undefined-css-.results">.results</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".content" data-type="css"><a href="#undefined-css-.content">.content</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".footer" data-type="css"><a href="#undefined-css-.footer">.footer</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".header" data-type="css"><a href="#undefined-css-.header">.header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".header-nav" data-type="css"><a href="#undefined-css-.header-nav">.header-nav</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="response" data-type="mixin"><a href="#undefined-mixin-response">response</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="navigation" data-type="mixin"><a href="#undefined-mixin-navigation">navigation</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flex" data-type="mixin"><a href="#undefined-mixin-flex">flex</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="section_header" data-type="mixin"><a href="#undefined-mixin-section_header">section_header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="input" data-type="mixin"><a href="#undefined-mixin-input">input</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="contactInput" data-type="mixin"><a href="#undefined-mixin-contactInput">contactInput</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="mixin"><a href="#undefined-mixin-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="sectionPaddings" data-type="mixin"><a href="#undefined-mixin-sectionPaddings">sectionPaddings</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="stars" data-type="mixin"><a href="#undefined-mixin-stars">stars</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="transition" data-type="variable"><a href="#undefined-variable-transition">transition</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family-title" data-type="variable"><a href="#undefined-variable-font-family-title">font-family-title</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family-text" data-type="variable"><a href="#undefined-variable-font-family-text">font-family-text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family-logo" data-type="variable"><a href="#undefined-variable-font-family-logo">font-family-logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="max-width" data-type="variable"><a href="#undefined-variable-max-width">max-width</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-control-color" data-type="variable"><a href="#undefined-variable-carousel-control-color">carousel-control-color</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-control-icon-width" data-type="variable"><a href="#undefined-variable-carousel-control-icon-width">carousel-control-icon-width</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-control-opacity" data-type="variable"><a href="#undefined-variable-carousel-control-opacity">carousel-control-opacity</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-control-hover-opacity" data-type="variable"><a href="#undefined-variable-carousel-control-hover-opacity">carousel-control-hover-opacity</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-transition-duration" data-type="variable"><a href="#undefined-variable-carousel-transition-duration">carousel-transition-duration</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-indicator-active-bg" data-type="variable"><a href="#undefined-variable-carousel-indicator-active-bg">carousel-indicator-active-bg</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-indicator-width" data-type="variable"><a href="#undefined-variable-carousel-indicator-width">carousel-indicator-width</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-indicator-height" data-type="variable"><a href="#undefined-variable-carousel-indicator-height">carousel-indicator-height</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-indicator-spacer" data-type="variable"><a href="#undefined-variable-carousel-indicator-spacer">carousel-indicator-spacer</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="colores"><div class="container">colores</div></h1><section class="main__sub-section" id="colores-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colores-variable-colors"><h3 class="item__heading"><a class="item__name" href="#variable-colors">colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$colors: (
+    primary: #407a82,
+    secondary: #d0e7f4,
+    tertiary: #040635,
+    quaternary: #787bea,
+    white-text: #FFFFFF,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de colores</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li></ul></section></section><section class="main__sub-section" id="colores-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="colores-function-getColor"><h3 class="item__heading"><a class="item__name" href="#function-getColor">getColor</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function getColor($color) { 
+    @return map-get($colors, $color);
+ }" data-collapsed="@function getColor($color) { ... }"><code>@function getColor($color) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Nombre del color del mapa de colores</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>Color en Hexadecimal</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#colores-variable-colors"><code>colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-section_header"><code>section_header</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-stars"><code>stars</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="pesos"><div class="container">pesos</div></h1><section class="main__sub-section" id="pesos-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="pesos-variable-font-weight"><h3 class="item__heading"><a class="item__name" href="#variable-font-weight">font-weight</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-weight: (
+    thin: 100,
+    extraLight: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semi-bold: 600,
+    bold: 700,
+    extraBold: 800
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de pesos de fuente</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#pesos-function-getFontWeight"><code>getFontWeight</code></a></li></ul></section></section><section class="main__sub-section" id="pesos-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="pesos-function-getFontWeight"><h3 class="item__heading"><a class="item__name" href="#function-getFontWeight">getFontWeight</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function getFontWeight($weight) { 
+    @return map-get($font-weight, $weight);
+ }" data-collapsed="@function getFontWeight($weight) { ... }"><code>@function getFontWeight($weight) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$weight</code></th><td data-label="desc"><p>Nombre del peso de fuente del mapa de pesos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Weight</code> &mdash;<p>Peso de fuente</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#pesos-variable-font-weight"><code>font-weight</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-section_header"><code>section_header</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="tamaños"><div class="container">tamaños</div></h1><section class="main__sub-section" id="tamaños-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="tamaños-variable-font-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-font-sizes">font-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-sizes: (
+    icons-size: 10rem,
+    xxxl: 6rem,
+    xxl: 4rem,
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de tamaños de fuente</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li></ul></section></section><section class="main__sub-section" id="tamaños-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="tamaños-function-getFontSize"><h3 class="item__heading"><a class="item__name" href="#function-getFontSize">getFontSize</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function getFontSize($size) { 
+    @return map-get($font-sizes, $size);
+ }" data-collapsed="@function getFontSize($size) { ... }"><code>@function getFontSize($size) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Nombre del tamaño de fuente del mapa de tamaños</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Size</code> &mdash;<p>Tamaño de fuente en rem</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#tamaños-variable-font-sizes"><code>font-sizes</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-section_header"><code>section_header</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-section_header"><code>section_header</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-stars"><code>stars</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-*"><h3 class="item__heading"><a class="item__name" href="#css-*">*</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family-text;
+    scroll-behavior: smooth;
+}</code>" data-collapsed="* { ... }"><code>* { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Inicialización de todo el documento</p></div></section><section class="main__item container item" id="undefined-css-html"><h3 class="item__heading"><a class="item__name" href="#css-html">html</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>html {
+  // Hacemos que la raiz sea 62.5% para que 1rem = 10px (mas facil de trabajar)
+    font-size: 62.5%;
+    @include response(md){
+        font-size: 56.25%;
+    }
+
+    @include response(sm){
+        font-size: 50%;
+    }
+
+    scroll-behavior: smooth;
+}</code>" data-collapsed="html { ... }"><code>html { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Inicialización de HTML</p></div></section><section class="main__item container item" id="undefined-css-.container"><h3 class="item__heading"><a class="item__name" href="#css-.container">.container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container {
+  display: grid;
+    grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    background-color: getColor(tertiary);
+}</code>" data-collapsed=".container { ... }"><code>.container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Container principal</p></div></section><section class="main__item container item" id="undefined-css-a"><h3 class="item__heading"><a class="item__name" href="#css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  text-decoration: none;
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Inicialización de enlaces</p></div></section><section class="main__item container item" id="undefined-css-.banner"><h3 class="item__heading"><a class="item__name" href="#css-.banner">.banner</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.banner {
+  &amp;-text{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: getColor(tertiary);
+        z-index: 50;
+        text-transform: uppercase;
+        top: 85%;
+        left: 72%;
+        font-size: getFontSize(sm);
+        font-family: $font-family-logo;
+        
+        @include response(sm){
+            font-size: getFontSize(md);
+            top: 65%;
+            left: 72%;
+        }
+
+        @include response(md){
+            font-size: getFontSize(xl);
+            top: 67%;
+            left: 72%;
+        }
+
+        @include response(xl){
+            font-size: getFontSize(xxxl);
+            top: 47%;
+            left: 72%;
+        }
+    }
+    
+    &amp;-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 10;
+    }
+}</code>" data-collapsed=".banner { ... }"><code>.banner { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Banner</p></div></section><section class="main__item container item" id="undefined-css-.card"><h3 class="item__heading"><a class="item__name" href="#css-.card">.card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card {
+  @include flex(column, center, center, 4rem);
+    border-radius: 0.25rem;
+    
+    &amp;-text{
+        text-align: center;
+
+        &amp;-title{
+            @include response(xl){
+                font-size: getFontSize(xxl);
+            }
+            font-size: getFontSize(lg);
+            color: getColor(primary);
+            font-weight: getFontWeight(bold);
+            padding-bottom: 1rem;
+            font-family: $font-family-title;
+        }
+
+        &amp;-description{
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            font-size: getFontSize(sm);
+            color: getColor(white-text);
+            font-weight: getFontWeight(normal);
+        }
+    }
+
+    &amp;-img{
+        width: 50%;
+        object-fit: cover;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+
+    }
+
+    @include response(xl){
+        &amp;-img{
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+    }
+
+    &amp;-button{
+        color: getColor(white-text);
+        background-color: getColor(primary);
+        font-size: getFontSize(md);
+        transition: $transition;
+        border: none;
+        padding: 1rem 3rem 1rem 3rem;
+        &amp;:hover{
+            cursor: pointer;
+            background-color: darken(getColor(quaternary), 20%);
+            transition: $transition;
+        }
+    }
+}</code>" data-collapsed=".card { ... }"><code>.card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Cards</p></div></section><section class="main__item container item" id="undefined-css-.gallery"><h3 class="item__heading"><a class="item__name" href="#css-.gallery">.gallery</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.gallery {
+  @include sectionPaddings();
+
+    &amp;-header{
+        @include section_header();
+    }
+
+    &amp;-image-container{
+        @include flex();
+    }
+
+    &amp;-img{
+        width: 75%;
+    }
+}</code>" data-collapsed=".gallery { ... }"><code>.gallery { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente para el section Carousel (se utiliza carousel de bootstrap)</p></div></section><section class="main__item container item" id="undefined-css-.contact"><h3 class="item__heading"><a class="item__name" href="#css-.contact">.contact</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contact {
+  @include sectionPaddings();
+    @include response(xl){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.2fr 1fr;
+    }
+    @include flex(column, center, center, 4rem);
+
+    &amp;-title{
+       @include section_header();
+       grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &amp;-container{
+        grid-area: 2 / 1 / 3 / 2;
+        @include flex(column, center, center, 4rem);
+
+        &amp;-item{
+            @include flex(column, center, center, 4rem);
+            @include response(xl){
+                padding-left: 10rem;
+            }
+            width: 100%;
+    
+            &amp;-input{
+                @include response(xl){
+                    @include contactInput();
+                }
+                @include contactInput(xs);
+                
+            }
+
+            &amp;-button{
+                @include response(xl){
+                    @include button(xxl);
+                }
+                @include button(md);
+            }
+        }
+    }
+
+    &amp;-img-container{
+        @include response(xl){
+            grid-area: 2 / 2 / 3 / 3;
+            @include flex(row, center, center);
+
+            &amp;-img{
+                width: 60%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        display: none;
+    }
+}</code>" data-collapsed=".contact { ... }"><code>.contact { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Contacto</p></div></section><section class="main__item container item" id="undefined-css-.details"><h3 class="item__heading"><a class="item__name" href="#css-.details">.details</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.details {
+  @include flex(column, flex-start, flex-start, 10rem);
+    padding-bottom: 10rem;
+    
+    @include response(xl){
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: 57vh repeat(2, 1fr);
+    }
+
+    &amp;-carousel{
+        grid-area: 1 / 1 / 2 / 3;
+        
+        &amp;-img{
+            width: 100%;
+            height: 57vh;
+            object-fit: cover;
+        }
+    }
+
+    &amp;-info{
+        padding-left: 2rem;
+        grid-area: 2 / 1 / 4 / 2;
+        @include flex(column, flex-start, flex-start, 6rem);
+        @include stars(xl);
+
+        @include response(xl){
+            padding-left: 7rem;
+            @include stars(xxxl);
+        }
+
+        &amp;-house-name{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xxxl);
+            }
+            font-size: getFontSize(xxl);
+            text-align: center;
+            font-family: $font-family-title;
+        }
+
+        &amp;-capacity{
+            @include flex($gap: 3rem);
+
+            &amp;-icon{
+                font-size: getFontSize(xxl);
+                color: getColor(primary);
+            }
+
+            &amp;-text{
+                color: getColor(white-text);
+                font-size: getFontSize(xxl);
+            }
+        }
+
+        &amp;-title{
+            color: getColor(primary);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(lg);
+            font-family: $font-family-title;
+        }
+
+        &amp;-text{
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            color: getColor(white-text);
+            font-size: getFontSize(sm);
+        }
+
+        &amp;-list{
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            color: getColor(white-text);
+            font-size: getFontSize(sm);
+        }
+    }
+
+    &amp;-aside{
+        grid-area: 2 / 2 / 4 / 3;
+
+        @include flex(column, center, center, 5rem);
+
+        &amp;-button{
+            @include response(xl){
+                @include button(xl);
+            }
+            @include button(md);
+        }
+
+        &amp;-title{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xxl);
+            }
+            font-size: getFontSize(xl);
+            text-align: center;
+            font-family: $font-family-title;
+        }
+
+        &amp;-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(lg);
+            text-align: center;
+        }
+    }
+}</code>" data-collapsed=".details { ... }"><code>.details { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente de los detalles de la casa</p></div></section><section class="main__item container item" id="undefined-css-.footer-column"><h3 class="item__heading"><a class="item__name" href="#css-.footer-column">.footer-column</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer-column {
+  @include flex($direction: column, $justify: flex-start, $align: center);
+}</code>" data-collapsed=".footer-column { ... }"><code>.footer-column { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Footer</p></div></section><section class="main__item container item" id="undefined-css-.fixed-position"><h3 class="item__heading"><a class="item__name" href="#css-.fixed-position">.fixed-position</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.fixed-position {
+  overflow: hidden;
+}</code>" data-collapsed=".fixed-position { ... }"><code>.fixed-position { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente de preparación de hamburguesa</p></div></section><section class="main__item container item" id="undefined-css-.information"><h3 class="item__heading"><a class="item__name" href="#css-.information">.information</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.information {
+  @include sectionPaddings();
+
+    &amp;-title{
+        @include section_header();
+    }
+
+    &amp;-container{
+        @include flex(column, center, center, 6rem);
+
+        &amp;-subtitle{
+            color: getColor(primary);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(lg);
+            font-family: $font-family-title;
+        }
+
+        &amp;-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(lg);
+            }
+            font-size: getFontSize(md);
+            text-align: justify;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        &amp;-list{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(lg);
+            }
+            font-size: getFontSize(md);
+        }
+
+        &amp;-end{
+            @include flex(row, center, center, 20rem);
+            padding-top: 5rem;
+
+            &amp;-logo{
+                @include flex(column, center, center, 3rem);
+
+                &amp;-img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &amp;-points{
+                @include flex(column, center, flex-start, 3rem);
+
+                &amp;-point{
+                    @include flex(row, center, center, 1rem);
+
+                    &amp;-icon{
+                        font-size: getFontSize(xl);
+                        color: getColor(primary);
+                    }
+
+                    &amp;-text{
+                        color: getColor(white-text);
+                        @include response(xl){
+                            font-size: getFontSize(lg);
+                        }
+                        font-size: getFontSize(md);
+                    }
+                }
+            }
+        }
+        
+
+        &amp;-label{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(lg);
+            }
+            font-size: getFontSize(md);
+            padding-bottom: 1rem;
+        }
+
+        &amp;-input{
+            @include contactInput();
+        }
+
+        &amp;-button{
+            @include button();
+        }
+    }
+}</code>" data-collapsed=".information { ... }"><code>.information { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente común para las páginas de información</p></div></section><section class="main__item container item" id="undefined-css-.logo"><h3 class="item__heading"><a class="item__name" href="#css-.logo">.logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.logo {
+  grid-column:  1 / 5;
+    grid-row: 1 / 2;
+
+    @include response(xl){
+
+        grid-row: 1 / 2;
+    }
+
+    padding: 1rem;
+    @include flex($direction: row, $justify: center, $align: center, $gap: 5rem);
+
+    &amp;-img{
+        @include response(xl){
+            width: 10rem;
+        }
+
+        width: 7rem;
+        transition: $transition;
+        
+        &amp;:hover{
+            cursor: pointer;
+            scale: 1.1;
+            transition: $transition;
+        }
+    }
+
+    &amp;-text{
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        font-family: $font-family-logo;
+        text-transform: uppercase;
+        color: getColor(primary);
+        font-weight: getFontWeight(bold);
+        transition: $transition;
+
+        &amp;:hover{
+            cursor: pointer;
+            scale: 1.1;
+            transition: $transition;
+        }
+    }
+}</code>" data-collapsed=".logo { ... }"><code>.logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Logo</p></div></section><section class="main__item container item" id="undefined-css-.news"><h3 class="item__heading"><a class="item__name" href="#css-.news">.news</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.news {
+  @include sectionPaddings();
+    
+    @include flex(column, center, center, 5rem);
+    
+    &amp;-header{
+        @include section_header();
+    }
+
+    @include response(xl){
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
+        grid-template-rows: 1fr;
+        &amp;-header{
+            grid-area: 1 / 1 / 2 / 8;
+            @include section_header();
+        }
+    
+        &amp;-first{
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    
+        &amp;-second{
+            grid-area: 2 / 4 / 3 / 5;
+        }
+    
+        &amp;-third{
+            grid-area: 2 / 6 / 3 / 7;
+        }
+    }
+}</code>" data-collapsed=".news { ... }"><code>.news { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente de noticias / interés</p></div></section><section class="main__item container item" id="undefined-css-.opinions"><h3 class="item__heading"><a class="item__name" href="#css-.opinions">.opinions</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opinions {
+  @include sectionPaddings();
+
+  &amp;-header {
+    @include section_header();
+  }
+
+  &amp;-text {
+    @include flex(column, center, center, 3rem);
+
+    &amp;-title {
+      @include response(xl) {
+        font-size: getFontSize(xxxl);
+      }
+
+      font-size: getFontSize(xl);
+      font-weight: getFontWeight(bold);
+      text-transform: uppercase;
+      color: getColor(primary);
+      text-align: center;
+      font-family: $font-family-title;
+    }
+
+    &amp;-description {
+      @include response(xl) {
+        font-size: getFontSize(xl);
+        text-align: justify;
+      }
+
+      font-size: getFontSize(sm);
+      font-weight: getFontWeight(normal);
+      text-transform: none;
+      color: getColor(tertiary);
+      text-align: left;
+    }
+  }
+}</code>" data-collapsed=".opinions { ... }"><code>.opinions { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Opiniones</p></div></section><section class="main__item container item" id="undefined-css-.publicity"><h3 class="item__heading"><a class="item__name" href="#css-.publicity">.publicity</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.publicity {
+  @include flex($direction: column, $gap: 5rem);
+    @include sectionPaddings();
+    
+
+    &amp;-header{
+        @include section_header();
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &amp;-column{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        place-items: center;
+        
+        &amp;-icon{
+            grid-area: 1 / 1 / 2 / 2;
+            color: getColor(primary);
+            font-size: getFontSize(icons-size);
+        }
+    
+        &amp;-content{
+            grid-area: 1 / 2 / 2 / 3;
+            @include flex($direction: column, $gap: 2rem);
+            padding-right: 5rem;
+        }
+    
+        &amp;-title{
+            color: getColor(primary);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(md);
+            font-family: $font-family-title;
+            font-weight: getFontWeight(semi-bold);
+            text-align: center;
+        }
+    
+        &amp;-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            font-size: getFontSize(sm);
+            font-weight: getFontWeight(normal);
+            text-align: center;
+        }
+    }
+
+    @include response(xl){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}</code>" data-collapsed=".publicity { ... }"><code>.publicity { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Publicidad</p></div></section><section class="main__item container item" id="undefined-css-.results-list"><h3 class="item__heading"><a class="item__name" href="#css-.results-list">.results-list</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.results-list {
+  padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    &amp;-list{
+        @include flex($direction: column, $justify: center, $align: center, $gap: 10rem);
+
+        &amp;-item{
+
+            @include response(xl){
+                display: grid;
+                grid-template-columns: 0.7fr 1fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 10rem;
+                padding-left: 5rem;
+            }
+            
+            @include flex($direction: column, $justify: center, $align: center, $gap: 5rem);
+
+            &amp;-img{
+                @include response(xl){
+                    padding-right: 5rem;
+                }
+                grid-area: 1 / 1 / 2 / 2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            &amp;-info{
+                grid-area: 1 / 2 / 2 / 3;
+                @include flex($direction: column, $justify: space-between, $align: flex-start, $gap: 3rem);
+                padding: 1rem;
+
+                &amp;-title{
+                    color: getColor(primary);
+                    @include response(xl){
+                        font-size: getFontSize(xxl);
+                    }
+                    font-size: getFontSize(xl);
+                    font-family: $font-family-title;
+                }
+
+                &amp;-capacity{
+                    @include flex($gap: 3rem);
+
+                    &amp;-icon{
+                        @include response(xl){
+                            font-size: getFontSize(xxl);
+                        }
+                        font-size: getFontSize(xl);
+                        color: getColor(primary);
+                    }
+
+                    &amp;-text{
+                        color: getColor(white-text);
+                        @include response(xl){
+                            font-size: getFontSize(xxl);
+                        }
+                        font-size: getFontSize(xl);
+                    }
+                }
+                
+                &amp;-description{
+                    color: getColor(white-text);
+                    @include response(xl){
+                        font-size: getFontSize(lg);
+                    }
+                    font-size: getFontSize(md);
+                }
+
+                &amp;-services{
+                    @include flex($gap: 5rem);
+
+                    &amp;-icon{
+                        @include response(xl){
+                            font-size: getFontSize(xxl);
+                        }
+                        font-size: getFontSize(xl);
+                        color: getColor(primary);
+                    }
+                }
+
+                &amp;-detail{
+                    @include response(xl){
+                        @include button();
+                    }
+                    @include button(md);
+                }
+            }
+        }
+    }
+
+    @include stars(xxl);
+}</code>" data-collapsed=".results-list { ... }"><code>.results-list { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Lista de resultados</p></div></section><section class="main__item container item" id="undefined-css-.results"><h3 class="item__heading"><a class="item__name" href="#css-.results">.results</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.results {
+  padding-left: 2rem;
+    padding-top: 6rem;
+    @include response(xl){
+        padding-top: 6rem;
+        padding-left: 5rem;
+    }
+    
+
+    @include flex($justify: flex-start, $gap: 2rem);
+    &amp;-title{
+        color: getColor(primary);
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        font-weight: getFontWeight(bold);
+        font-family: $font-family-title;
+    }
+
+    &amp;-number{
+        color: getColor(white-text);
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        font-weight: getFontWeight(bold);
+    }
+}</code>" data-collapsed=".results { ... }"><code>.results { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente: Números de resultados</p></div></section><section class="main__item container item" id="undefined-css-.content"><h3 class="item__heading"><a class="item__name" href="#css-.content">.content</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.content {
+  grid-row: 2;
+    grid-column: 1 / -1;
+}</code>" data-collapsed=".content { ... }"><code>.content { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout para contenido de la página</p></div></section><section class="main__item container item" id="undefined-css-.footer"><h3 class="item__heading"><a class="item__name" href="#css-.footer">.footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer {
+  grid-column:  1 / -1;
+    grid-row: 3;
+    @include response(xl){
+        @include flex($direction: column, $justify: center, $align: flex-start, $gap: 5rem);
+    }
+
+    @include flex($direction: column, $gap: 2rem);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: darken(getColor(tertiary), 2%);
+
+    &amp;-title{
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        font-weight: getFontWeight(bold);
+        color: getColor(primary);
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    &amp;-link{
+        @include response(xl){
+            font-size: getFontSize(lg);
+        }
+        font-size: getFontSize(md);
+        font-weight: getFontWeight(normal);
+        color: getColor(white-text);
+        padding-bottom: 2rem;
+        text-align: center;
+        text-decoration: none;
+        transition: $transition;
+
+        &amp;:hover{
+            cursor: pointer;
+            color: getColor(primary);
+            transition: $transition;
+        }
+    }
+
+    &amp;-icon{
+        @include response(xl){
+            font-size: getFontSize(xxl);
+        }
+        font-size: getFontSize(xl);
+        color: getColor(white-text);
+        padding: 0 1rem;
+        transition: $transition;
+
+        &amp;:hover{
+            cursor: pointer;
+            color: getColor(primary);
+            transition: $transition;
+        }
+    }
+
+    &amp;-list{
+        list-style: none;
+    }
+
+    @include response(xl){
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+    }
+}</code>" data-collapsed=".footer { ... }"><code>.footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout Footer</p></div></section><section class="main__item container item" id="undefined-css-.header"><h3 class="item__heading"><a class="item__name" href="#css-.header">.header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.header {
+  grid-column:  1 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
+    grid-template-rows: repeat(2fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    background-color: darken(getColor(tertiary), 2%);
+}</code>" data-collapsed=".header { ... }"><code>.header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout cabecera</p></div></section><section class="main__item container item" id="undefined-css-.header-nav"><h3 class="item__heading"><a class="item__name" href="#css-.header-nav">.header-nav</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.header-nav {
+  grid-column: 8/10;
+    @include navigation($hamburger: true);
+
+    @include response(lg){
+        grid-column: 6/10;
+        @include navigation($hamburger: false);
+    }
+}</code>" data-collapsed=".header-nav { ... }"><code>.header-nav { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layour Navs</p></div></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-response"><h3 class="item__heading"><a class="item__name" href="#mixin-response">response</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin response($breakpoint) { 
+    @if($breakpoint == xl){
+        @media (min-width: 1200px){
+            @content;
+        }
+    }
+    @else if($breakpoint == lg){
+        @media (min-width: 992px){
+            @content;
+        }
+    }
+    @else if($breakpoint == md){
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+    @else if($breakpoint == sm){
+        @media (min-width: 576px){
+            @content;
+        }
+    }
+    @else if($breakpoint == xs){
+        @media (min-width: 0px){
+            @content;
+        }
+    } 
+ }" data-collapsed="@mixin response($breakpoint) { ... }"><code>@mixin response($breakpoint) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que cambia el contenido de un elemento de acuerdo a un breakpoint</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$breakpoint</code></th><td data-label="desc"><ul><li>Nombre del breakpoint</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.container{
+   @include response(xl){
+      background-color: getColor(secondary);
+  }
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-section_header"><code>section_header</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-navigation"><h3 class="item__heading"><a class="item__name" href="#mixin-navigation">navigation</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin navigation($hamburger: false) { 
+  @include flex($direction: row, $justify: space-between, $align: center);
+
+  
+  @if $hamburger {
+    &amp;-list {
+      @include flex(column, center, center, 10rem);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: darken(getColor(tertiary), 2%);
+      top: 0.01rem;
+      left: -200%;
+      right: 0.01rem;
+      text-align: center;
+      transition: all 0.5s;
+      gap: 5rem;
+      z-index: 100;
+    }
+  } @else {
+      &amp;-list {
+        @include flex($direction: row, $justify: space-around);
+        position: inherit;
+        align-items: center;
+        height: 100%;
+      }
+    }
+    
+
+    &amp;-hamburger{
+      @include response(lg){
+        display: none;
+      }
+
+      z-index: 200;
+      display: block;
+      font-size: getFontSize(md);
+        cursor: pointer;
+
+        &amp;-lines{
+          height: 2em;
+          width: 2.5em;
+      
+          @include flex(column, space-between);
+          
+          border-radius: 50%;
+          &amp;-line{
+              height: 0.2em;
+              width: 100%;
+              border-radius: 10px;
+              background-color: getColor(primary);
+  
+              &amp;-1{
+                  transform-origin: 0% 0%;
+                  transition: transform 0.4s ease-in-out;
+              }
+  
+              &amp;-2{
+                  transition: transform 0.2s ease-in-out;
+              }
+  
+              &amp;-3{
+                  transform-origin: 0% 100%;
+                  transition: transform 0.4s ease-in-out;
+              }
+          }
+      }
+    }
+
+    &amp;-item{
+        list-style: none;
+    }
+
+    &amp;-link{
+        color: getColor(primary);
+        font-size: getFontSize(lg);
+        text-decoration: none;
+        transition: $transition;
+        padding: 1rem 3rem 1rem 3rem;
+        font-weight: getFontWeight(semi-bold);
+        background-color: darken(getColor(tertiary), 2%);
+        &amp;:hover{
+            color: getColor(tertiary);
+            transition: $transition;
+            background-color: getColor(quaternary);
+        }
+    }
+    
+    &amp;-button{
+        @include button();
+    }
+ }" data-collapsed="@mixin navigation($hamburger: false) { ... }"><code>@mixin navigation($hamburger: false) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para el menú de navegación</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$hamburger</code></th><td data-label="desc"><ul><li>Preparar el menú para el menú hamburguesa</li></ul></td><td data-label="type"><code>Boolean</code></td><td data-label="default"><code>false</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.navigation{
+  @include navigation();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-flex"><code>flex</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-flex"><code>flex</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-flex"><code>flex</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-response"><code>response</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-flex"><code>flex</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#pesos-function-getFontWeight"><code>getFontWeight</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-flex"><h3 class="item__heading"><a class="item__name" href="#mixin-flex">flex</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) { 
+    display: flex;
+    flex-flow: $direction wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+ }" data-collapsed="@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) { ... }"><code>@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin de posicionamiento con flexbox</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><ul><li>Dirección del flexbox</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>row</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justify</code></th><td data-label="desc"><ul><li>Justificación del contenido</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>center</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$align</code></th><td data-label="desc"><ul><li>Alineación del contenido</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>center</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gap</code></th><td data-label="desc"><ul><li>Espacio entre elementos</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>0</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.container{
+   @include flex();
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-section_header"><h3 class="item__heading"><a class="item__name" href="#mixin-section_header">section_header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin section_header() { 
+    font-family: $font-family-logo;
+    font-size: getFontSize(xl);
+    font-weight: getFontWeight(bold);
+    text-transform: uppercase;
+    text-align: center;
+    color: getColor(primary);
+    padding-bottom: 7rem;
+
+    word-spacing: 2rem;
+    @include response(lg){
+        font-size: getFontSize(xxxl);
+    }
+ }" data-collapsed="@mixin section_header() { ... }"><code>@mixin section_header() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para título de sección</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.opinions{
+ @include section_header();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-response"><code>response</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#pesos-function-getFontWeight"><code>getFontWeight</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-font-family-logo"><code>font-family-logo</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-input"><h3 class="item__heading"><a class="item__name" href="#mixin-input">input</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin input() { 
+    color: getColor(white-text);
+    background-color: darken(getColor(tertiary), 2%);
+    border: 1px solid getColor(primary);
+    border-radius: 0.5rem;
+    @include response(xl){
+      font-size: getFontSize(md);
+    }
+    font-size: getFontSize(sm);
+    padding: 1rem 2rem;
+    transition: $transition;
+    &amp;:focus{
+        outline: none;
+        border: 1px solid getColor(primary);
+        transition: $transition;
+    }
+ }" data-collapsed="@mixin input() { ... }"><code>@mixin input() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para inputs de cabecera</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.header-input{
+  @include input();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-response"><code>response</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-contactInput"><h3 class="item__heading"><a class="item__name" href="#mixin-contactInput">contactInput</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin contactInput($size: xl) { 
+    color: getColor(white-text);
+    background-color: darken(getColor(tertiary), 2%);
+    border: 1px solid getColor(primary);
+    border-radius: 0.5rem;
+    font-size: getFontSize($size);
+    padding: 1rem 2rem;
+    transition: $transition;
+    resize: none;
+    &amp;:focus{
+        outline: none;
+        border: 1px solid lighten(getColor(primary), 20%);
+        transition: $transition;
+    }
+ }" data-collapsed="@mixin contactInput($size: xl) { ... }"><code>@mixin contactInput($size: xl) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para inputs de formulario de contacto</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><ul><li>Tamaño del input</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>xl</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.contact-input{
+ @include contactInput();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-button"><h3 class="item__heading"><a class="item__name" href="#mixin-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button($size: lg) { 
+    color: getColor(white-text);
+    background-color: getColor(primary);
+    font-size: getFontSize($size);
+    transition: $transition;
+    border: none;
+    padding: 1rem 3rem 1rem 3rem;
+    text-decoration: none;
+    &amp;:hover{
+        cursor: pointer;
+        background-color: darken(getColor(quaternary), 20%);
+        transition: $transition;
+    }
+ }" data-collapsed="@mixin button($size: lg) { ... }"><code>@mixin button($size: lg) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para botones</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><ul><li>Tamaño del botón</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>lg</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.button{
+  @include button();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-transition"><code>transition</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-sectionPaddings"><h3 class="item__heading"><a class="item__name" href="#mixin-sectionPaddings">sectionPaddings</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin sectionPaddings() { 
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+ }" data-collapsed="@mixin sectionPaddings() { ... }"><code>@mixin sectionPaddings() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que aplica los paddings inicial y final de las secciones</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.section{
+ @include sectionPaddings();
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-stars"><h3 class="item__heading"><a class="item__name" href="#mixin-stars">stars</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin stars($size: xxxl) { 
+    [data-star] {
+        text-align: left;
+        font-style: normal;
+        font-size: getFontSize($size);
+        display: inline-block;
+        position: relative;
+        unicode-bidi: bidi-override;
+      }
+      
+      [data-star]::before {
+        display: block;
+        content: &quot;★★★★★&quot;;
+        color: #ddd;
+      }
+      
+      [data-star]::after {
+        position: absolute;
+        top: 0;
+        content: &quot;★★★★★&quot;;
+        width: 0;
+        color: getColor(primary);
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+      }
+      
+      [data-star^=&quot;0.1&quot;]::after,
+      [data-star^=&quot;.1&quot;]::after {
+        width: 2%;
+      }
+      [data-star^=&quot;0.2&quot;]::after,
+      [data-star^=&quot;.2&quot;]::after {
+        width: 4%;
+      }
+      [data-star^=&quot;0.3&quot;]::after,
+      [data-star^=&quot;.3&quot;]::after {
+        width: 6%;
+      }
+      [data-star^=&quot;0.4&quot;]::after,
+      [data-star^=&quot;.4&quot;]::after {
+        width: 8%;
+      }
+      [data-star^=&quot;0.5&quot;]::after,
+      [data-star^=&quot;.5&quot;]::after {
+        width: 10%;
+      }
+      [data-star^=&quot;0.6&quot;]::after,
+      [data-star^=&quot;.6&quot;]::after {
+        width: 12%;
+      }
+      [data-star^=&quot;0.7&quot;]::after,
+      [data-star^=&quot;.7&quot;]::after {
+        width: 14%;
+      }
+      [data-star^=&quot;0.8&quot;]::after,
+      [data-star^=&quot;.8&quot;]::after {
+        width: 16%;
+      }
+      [data-star^=&quot;0.9&quot;]::after,
+      [data-star^=&quot;.9&quot;]::after {
+        width: 18%;
+      }
+      [data-star^=&quot;1&quot;]::after {
+        width: 20%;
+      }
+      [data-star^=&quot;1.1&quot;]::after {
+        width: 22%;
+      }
+      [data-star^=&quot;1.2&quot;]::after {
+        width: 24%;
+      }
+      [data-star^=&quot;1.3&quot;]::after {
+        width: 26%;
+      }
+      [data-star^=&quot;1.4&quot;]::after {
+        width: 28%;
+      }
+      [data-star^=&quot;1.5&quot;]::after {
+        width: 30%;
+      }
+      [data-star^=&quot;1.6&quot;]::after {
+        width: 32%;
+      }
+      [data-star^=&quot;1.7&quot;]::after {
+        width: 34%;
+      }
+      [data-star^=&quot;1.8&quot;]::after {
+        width: 36%;
+      }
+      [data-star^=&quot;1.9&quot;]::after {
+        width: 38%;
+      }
+      [data-star^=&quot;2&quot;]::after {
+        width: 40%;
+      }
+      [data-star^=&quot;2.1&quot;]::after {
+        width: 42%;
+      }
+      [data-star^=&quot;2.2&quot;]::after {
+        width: 44%;
+      }
+      [data-star^=&quot;2.3&quot;]::after {
+        width: 46%;
+      }
+      [data-star^=&quot;2.4&quot;]::after {
+        width: 48%;
+      }
+      [data-star^=&quot;2.5&quot;]::after {
+        width: 50%;
+      }
+      [data-star^=&quot;2.6&quot;]::after {
+        width: 52%;
+      }
+      [data-star^=&quot;2.7&quot;]::after {
+        width: 54%;
+      }
+      [data-star^=&quot;2.8&quot;]::after {
+        width: 56%;
+      }
+      [data-star^=&quot;2.9&quot;]::after {
+        width: 58%;
+      }
+      [data-star^=&quot;3&quot;]::after {
+        width: 60%;
+      }
+      [data-star^=&quot;3.1&quot;]::after {
+        width: 62%;
+      }
+      [data-star^=&quot;3.2&quot;]::after {
+        width: 64%;
+      }
+      [data-star^=&quot;3.3&quot;]::after {
+        width: 66%;
+      }
+      [data-star^=&quot;3.4&quot;]::after {
+        width: 68%;
+      }
+      [data-star^=&quot;3.5&quot;]::after {
+        width: 70%;
+      }
+      [data-star^=&quot;3.6&quot;]::after {
+        width: 72%;
+      }
+      [data-star^=&quot;3.7&quot;]::after {
+        width: 74%;
+      }
+      [data-star^=&quot;3.8&quot;]::after {
+        width: 76%;
+      }
+      [data-star^=&quot;3.9&quot;]::after {
+        width: 78%;
+      }
+      [data-star^=&quot;4&quot;]::after {
+        width: 80%;
+      }
+      [data-star^=&quot;4.1&quot;]::after {
+        width: 82%;
+      }
+      [data-star^=&quot;4.2&quot;]::after {
+        width: 84%;
+      }
+      [data-star^=&quot;4.3&quot;]::after {
+        width: 86%;
+      }
+      [data-star^=&quot;4.4&quot;]::after {
+        width: 88%;
+      }
+      [data-star^=&quot;4.5&quot;]::after {
+        width: 90%;
+      }
+      [data-star^=&quot;4.6&quot;]::after {
+        width: 92%;
+      }
+      [data-star^=&quot;4.7&quot;]::after {
+        width: 94%;
+      }
+      [data-star^=&quot;4.8&quot;]::after {
+        width: 96%;
+      }
+      [data-star^=&quot;4.9&quot;]::after {
+        width: 98%;
+      }
+      [data-star^=&quot;5&quot;]::after {
+        width: 100%;
+      }
+ }" data-collapsed="@mixin stars($size: xxxl) { ... }"><code>@mixin stars($size: xxxl) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para estrellas de valoración</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><ul><li>Tamaño de las estrellas</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>xxxl</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.opinions-stars{
+  @include stars();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#tamaños-function-getFontSize"><code>getFontSize</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colores-function-getColor"><code>getColor</code></a></li></ul></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-transition"><h3 class="item__heading"><a class="item__name" href="#variable-transition">transition</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$transition: 0.2s;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-input"><code>input</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-contactInput"><code>contactInput</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-button"><code>button</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-font-family-title"><h3 class="item__heading"><a class="item__name" href="#variable-font-family-title">font-family-title</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family-title: &#39;Montserrat&#39;, sans-serif;</code></pre></div></section><section class="main__item container item" id="undefined-variable-font-family-text"><h3 class="item__heading"><a class="item__name" href="#variable-font-family-text">font-family-text</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family-text: &#39;Poppins&#39;, sans-serif;</code></pre></div></section><section class="main__item container item" id="undefined-variable-font-family-logo"><h3 class="item__heading"><a class="item__name" href="#variable-font-family-logo">font-family-logo</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family-logo: &#39;Cormorant&#39;, serif;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-section_header"><code>section_header</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-max-width"><h3 class="item__heading"><a class="item__name" href="#variable-max-width">max-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$max-width: 1200px;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-control-color"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-control-color">carousel-control-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-control-color: getColor(primary);</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-control-icon-width"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-control-icon-width">carousel-control-icon-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-control-icon-width: 7rem;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-control-opacity"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-control-opacity">carousel-control-opacity</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-control-opacity: 0.5;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-control-hover-opacity"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-control-hover-opacity">carousel-control-hover-opacity</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-control-hover-opacity: 1;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-transition-duration"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-transition-duration">carousel-transition-duration</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-transition-duration: .8s;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-indicator-active-bg"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-indicator-active-bg">carousel-indicator-active-bg</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-indicator-active-bg: getColor(primary);</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-indicator-width"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-indicator-width">carousel-indicator-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-indicator-width: 3rem;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-indicator-height"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-indicator-height">carousel-indicator-height</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-indicator-height: 1rem;</code></pre></div></section><section class="main__item container item" id="undefined-variable-carousel-indicator-spacer"><h3 class="item__heading"><a class="item__name" href="#variable-carousel-indicator-spacer">carousel-indicator-spacer</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-indicator-spacer: 2rem;</code></pre></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <a class="project-info__name" href="https://github.com/raulgodii/SASS-RoyalRentals#readme">Proyectosass</a><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

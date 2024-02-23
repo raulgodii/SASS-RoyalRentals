@@ -1,0 +1,56 @@
+/// Layour Navs
+.header-nav{
+    grid-column: 8/10;
+    @include navigation($hamburger: true);
+
+    @include response(lg){
+        grid-column: 6/10;
+        @include navigation($hamburger: false);
+    }
+}
+
+.search-nav{
+    grid-column: 1/-1;
+    grid-row: 2/2;
+
+    @include flex($direction: column, $align: center, $gap: 5rem);
+    @include response(xl){
+        @include flex($justify: space-evenly);
+    }
+    
+    &-item{
+        @include flex($direction: column, $align: center, $gap: 1rem);
+
+        @include response(xl){
+            @include flex($direction: column, $align: flex-start, $gap: 1rem);
+        }
+
+        &-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(md);
+        }
+
+        &-input{
+            @include input();
+        }
+
+        &-input-group{
+            @include flex($gap: 2rem);
+
+            &-icon{
+                @include response(xl){
+                    font-size: getFontSize(xxl);
+                }
+                font-size: getFontSize(xl);
+                color: getColor(primary);
+            }
+        }
+    }
+
+    &-search-button{
+        @include button();
+    }
+}

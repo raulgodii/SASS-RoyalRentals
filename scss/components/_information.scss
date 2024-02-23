@@ -1,0 +1,94 @@
+/// Componente común para las páginas de información
+.information{
+    @include sectionPaddings();
+
+    &-title{
+        @include section_header();
+    }
+
+    &-container{
+        @include flex(column, center, center, 6rem);
+
+        &-subtitle{
+            color: getColor(primary);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(lg);
+            font-family: $font-family-title;
+        }
+
+        &-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(lg);
+            }
+            font-size: getFontSize(md);
+            text-align: justify;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        &-list{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(lg);
+            }
+            font-size: getFontSize(md);
+        }
+
+        &-end{
+            @include flex(row, center, center, 20rem);
+            padding-top: 5rem;
+
+            &-logo{
+                @include flex(column, center, center, 3rem);
+
+                &-img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &-points{
+                @include flex(column, center, flex-start, 3rem);
+
+                &-point{
+                    @include flex(row, center, center, 1rem);
+
+                    &-icon{
+                        font-size: getFontSize(xl);
+                        color: getColor(primary);
+                    }
+
+                    &-text{
+                        color: getColor(white-text);
+                        @include response(xl){
+                            font-size: getFontSize(lg);
+                        }
+                        font-size: getFontSize(md);
+                    }
+                }
+            }
+        }
+        
+
+        &-label{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(lg);
+            }
+            font-size: getFontSize(md);
+            padding-bottom: 1rem;
+        }
+
+        &-input{
+            @include contactInput();
+        }
+
+        &-button{
+            @include button();
+        }
+    }
+}

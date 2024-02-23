@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4328465e5b.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+    <link rel="icon" href="images/favicon.ico" />
+    <title>RoyalRentals | Contact</title>
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img class="logo-img" src="images/logo.png" alt="Brand Logo">
+          </a>
+          <a href="index.html">
+            <h1 class="logo-text">RoyalRentals</h1>
+          </a>
+        </div>
+        <nav class="header-nav">
+            <div class="header-nav-hamburger">
+              <div class="header-nav-hamburger-lines">
+                  <span class="header-nav-hamburger-lines-line header-nav-hamburger-lines-line-1"></span>
+                  <span class="header-nav-hamburger-lines-line header-nav-hamburger-lines-line-2"></span>
+                  <span class="header-nav-hamburger-lines-line header-nav-hamburger-lines-line-3"></span>
+              </div> 
+          </div>
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a class="header-nav-link" href="index.html">Home</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="about.html">About</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="results.html">Houses</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="contact.html">Contact</a></li>
+                <a href="contact.html" class="header-nav-button">Get Started</a>
+            </ul>
+        </nav>
+        <nav class="search-nav">
+          <div class="search-nav-item">
+            <h5 class="search-nav-item-text">Arrival</h5>
+            <div class="search-nav-item-input-group">
+              <input class="search-nav-item-input" type="date" name="arrival" id="arrival">
+              <i class="fa-regular fa-calendar-days search-nav-item-input-group-icon"></i>
+            </div>
+          </div>
+          <div class="search-nav-item">
+            <h5 class="search-nav-item-text">Departure</h5>
+            <div class="search-nav-item-input-group">
+              <input class="search-nav-item-input" type="date" name="departure" id="departure">
+              <i class="fa-regular fa-calendar-days search-nav-item-input-group-icon"></i>
+            </div>
+          </div>
+          <div class="search-nav-item">
+            <h5 class="search-nav-item-text">Rooms</h5>
+            <div class="search-nav-item-input-group">
+              <select class="search-nav-item-input">
+                <option value="1">Individual</option>
+                <option value="2">Double</option>
+                <option value="3">Triple</option>
+                <option value="4">Quadruple</option>
+                <option value="5">Quintuple</option>
+              </select>
+              <i class="fa-regular fa-solid fa-bed search-nav-item-input-group-icon"></i>
+            </div>
+          </div>
+          <div>
+            <a class="search-nav-search-button" href="results.html">Search</a>
+          </div>
+        </nav>
+    </header>
+
+        <main class="content">
+            <section class="contact">
+                <h2 class="contact-title">Contact Us</h2>
+                <form class="contact-container">
+                    <div class="contact-container-item">
+                        <input class="contact-container-item-input" type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="contact-container-item">
+                        <input class="contact-container-item-input" type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="contact-container-item">
+                        <input class="contact-container-item-input" type="tel" name="phone" id="phone" placeholder="Phone" required maxlength="9">
+                    </div>
+
+                    <div class="contact-container-item">
+                        <textarea class="contact-container-item-input" name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div class="contact-container-item">
+                        <button class="contact-container-item-button">Send</button>
+                    </div>
+                </form>
+                <div class="contact-img-container">
+                    <img class="contact-img-container-img" src="images/oficinista.png" alt="Employee illustration">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-column">
+            <h2 class="footer-title">Help</h2>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="contact.html">Contact</a></li>
+              <li><a class="footer-link" href="#">Shipment</a></li>
+              <li><a class="footer-link" href="#">Devolutions</a></li>
+              <li><a class="footer-link" href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">About Us</h2>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="about.html">Who we are</a></li>
+              <li><a class="footer-link" href="about.html">Work with us</a></li>
+              <li><a class="footer-link" href="about.html">Privacity policy</a></li>
+              <li><a class="footer-link" href="about.html">Terms and conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">Legal</h2>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="policy.html">Cookies policy</a></li>
+              <li><a class="footer-link" href="policy.html">Privacity policy</a></li>
+              <li><a class="footer-link" href="policy.html">Terms and conditions</a></li>
+              <li><a class="footer-link" href="policy.html">Legal Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">Payment Methods</h2>
+            <ul class="footer-row footer-list">
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-visa"></i></a>
+              </li>
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-mastercard"></i></a>
+              </li>
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-paypal"></i></a>
+              </li>
+              <li>
+                <a class="footer-icon"><i class="fab fa-cc-amazon-pay"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">Follow Us</h2>
+            <ul class="footer-row footer-list">
+              <li>
+                <a href="https://www.instagram.com/RoyalRental/" target="_blank"><i class="fab fa-instagram footer-icon"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/RoyalRental" target="_blank"><i class="fab fa-facebook-f footer-icon"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/RoyalRental" target="_blank"><i class="fab fa-twitter footer-icon"></i></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>

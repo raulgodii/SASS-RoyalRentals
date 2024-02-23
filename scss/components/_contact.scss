@@ -1,0 +1,58 @@
+/// Componente: Contacto
+.contact{
+    @include sectionPaddings();
+    @include response(xl){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.2fr 1fr;
+    }
+    @include flex(column, center, center, 4rem);
+
+    &-title{
+       @include section_header();
+       grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &-container{
+        grid-area: 2 / 1 / 3 / 2;
+        @include flex(column, center, center, 4rem);
+
+        &-item{
+            @include flex(column, center, center, 4rem);
+            @include response(xl){
+                padding-left: 10rem;
+            }
+            width: 100%;
+    
+            &-input{
+                @include response(xl){
+                    @include contactInput();
+                }
+                @include contactInput(xs);
+                
+            }
+
+            &-button{
+                @include response(xl){
+                    @include button(xxl);
+                }
+                @include button(md);
+            }
+        }
+    }
+
+    &-img-container{
+        @include response(xl){
+            grid-area: 2 / 2 / 3 / 3;
+            @include flex(row, center, center);
+
+            &-img{
+                width: 60%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        display: none;
+    }
+}

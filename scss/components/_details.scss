@@ -1,0 +1,115 @@
+/// Componente de los detalles de la casa
+.details{
+    @include flex(column, flex-start, flex-start, 10rem);
+    padding-bottom: 10rem;
+    
+    @include response(xl){
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: 57vh repeat(2, 1fr);
+    }
+
+    &-carousel{
+        grid-area: 1 / 1 / 2 / 3;
+        
+        &-img{
+            width: 100%;
+            height: 57vh;
+            object-fit: cover;
+        }
+    }
+
+    &-info{
+        padding-left: 2rem;
+        grid-area: 2 / 1 / 4 / 2;
+        @include flex(column, flex-start, flex-start, 6rem);
+        @include stars(xl);
+
+        @include response(xl){
+            padding-left: 7rem;
+            @include stars(xxxl);
+        }
+
+        &-house-name{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xxxl);
+            }
+            font-size: getFontSize(xxl);
+            text-align: center;
+            font-family: $font-family-title;
+        }
+
+        &-capacity{
+            @include flex($gap: 3rem);
+
+            &-icon{
+                font-size: getFontSize(xxl);
+                color: getColor(primary);
+            }
+
+            &-text{
+                color: getColor(white-text);
+                font-size: getFontSize(xxl);
+            }
+        }
+
+        &-title{
+            color: getColor(primary);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(lg);
+            font-family: $font-family-title;
+        }
+
+        &-text{
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            color: getColor(white-text);
+            font-size: getFontSize(sm);
+        }
+
+        &-list{
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            color: getColor(white-text);
+            font-size: getFontSize(sm);
+        }
+    }
+
+    &-aside{
+        grid-area: 2 / 2 / 4 / 3;
+
+        @include flex(column, center, center, 5rem);
+
+        &-button{
+            @include response(xl){
+                @include button(xl);
+            }
+            @include button(md);
+        }
+
+        &-title{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xxl);
+            }
+            font-size: getFontSize(xl);
+            text-align: center;
+            font-family: $font-family-title;
+        }
+
+        &-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(lg);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+/// Componente para el section Carousel (se utiliza carousel de bootstrap)
+.gallery{
+    @include sectionPaddings();
+
+    &-header{
+        @include section_header();
+    }
+
+    &-image-container{
+        @include flex();
+    }
+
+    &-img{
+        width: 75%;
+    }
+}

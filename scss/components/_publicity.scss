@@ -1,0 +1,58 @@
+/// Componente: Publicidad
+.publicity{
+    @include flex($direction: column, $gap: 5rem);
+    @include sectionPaddings();
+    
+
+    &-header{
+        @include section_header();
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &-column{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        place-items: center;
+        
+        &-icon{
+            grid-area: 1 / 1 / 2 / 2;
+            color: getColor(primary);
+            font-size: getFontSize(icons-size);
+        }
+    
+        &-content{
+            grid-area: 1 / 2 / 2 / 3;
+            @include flex($direction: column, $gap: 2rem);
+            padding-right: 5rem;
+        }
+    
+        &-title{
+            color: getColor(primary);
+            @include response(xl){
+                font-size: getFontSize(xl);
+            }
+            font-size: getFontSize(md);
+            font-family: $font-family-title;
+            font-weight: getFontWeight(semi-bold);
+            text-align: center;
+        }
+    
+        &-text{
+            color: getColor(white-text);
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            font-size: getFontSize(sm);
+            font-weight: getFontWeight(normal);
+            text-align: center;
+        }
+    }
+
+    @include response(xl){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}

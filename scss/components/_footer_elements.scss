@@ -1,0 +1,9 @@
+/// Componente: Footer
+.footer-column{
+    @include flex($direction: column, $justify: flex-start, $align: center);
+}
+
+.footer-row{
+    @include flex();
+    padding-left: 0;
+}

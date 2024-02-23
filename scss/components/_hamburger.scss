@@ -1,0 +1,20 @@
+/// Componente de preparación de hamburguesa
+.fixed-position{
+    overflow: hidden;
+}
+
+.open .header-nav-hamburger-lines-line-1{
+    transform: rotate(47deg);
+}
+
+.open .header-nav-hamburger-lines-line-2{
+    transform: scaleY(0);
+}
+
+.open .header-nav-hamburger-lines-line-3{
+    transform: rotate(-47deg);
+}
+
+nav.open ul.header-nav-list{
+    left: 0;
+}

@@ -1,0 +1,61 @@
+/// Componente: Cards
+.card{
+
+    @include flex(column, center, center, 4rem);
+    border-radius: 0.25rem;
+    
+    &-text{
+        text-align: center;
+
+        &-title{
+            @include response(xl){
+                font-size: getFontSize(xxl);
+            }
+            font-size: getFontSize(lg);
+            color: getColor(primary);
+            font-weight: getFontWeight(bold);
+            padding-bottom: 1rem;
+            font-family: $font-family-title;
+        }
+
+        &-description{
+            @include response(xl){
+                font-size: getFontSize(md);
+            }
+            font-size: getFontSize(sm);
+            color: getColor(white-text);
+            font-weight: getFontWeight(normal);
+        }
+    }
+
+    &-img{
+        width: 50%;
+        object-fit: cover;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+
+    }
+
+    @include response(xl){
+        &-img{
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+    }
+
+    &-button{
+        color: getColor(white-text);
+        background-color: getColor(primary);
+        font-size: getFontSize(md);
+        transition: $transition;
+        border: none;
+        padding: 1rem 3rem 1rem 3rem;
+        &:hover{
+            cursor: pointer;
+            background-color: darken(getColor(quaternary), 20%);
+            transition: $transition;
+        }
+    }
+}
